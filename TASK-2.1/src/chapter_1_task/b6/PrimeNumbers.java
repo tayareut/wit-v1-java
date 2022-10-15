@@ -18,7 +18,7 @@ public class PrimeNumbers {
                 System.out.println(nums[i]);
         }
     }
-        public static boolean isPrime(int size){
+    public static boolean isPrime(int size){
             int temp;
             if (size == 1) return false;
             for (int i = 2; i <= size / 2; i++) {
