@@ -12,22 +12,22 @@ public class MaxMin {
         for (int i = 0; i < size; i++) {
             nums[i] = scanner.nextInt();
         }
-        int MaxValue = 0;
-        for (int i = 0; i< size; i++) {
-            if (nums[MaxValue] < nums[i]) {
-                MaxValue = i;
+        int maxValue = 0;
+        for (int i = 0; i < size; i++) {
+            if (nums[maxValue] < nums[i]) {
+                maxValue = i;
             }
 
         }
-        System.out.println(nums[MaxValue] + " - минимальное число");
+        System.out.println(nums[maxValue] + " - максимальное число");
 
-        int MinValue = 0;
-        for (int i = 0; i< size; i++) {
-            if (nums[MinValue] > nums[i]) {
-                MinValue = i;
+        int minValue = 0;
+        for (int i = 0; i < size; i++) {
+            if (nums[minValue] > nums[i]) {
+                minValue = i;
             }
 
         }
-        System.out.println(nums[MinValue] + " - минимальное число");
+        System.out.println(nums[minValue] + " - минимальное число");
     }
 }

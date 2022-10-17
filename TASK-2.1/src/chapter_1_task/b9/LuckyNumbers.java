@@ -1,32 +1,31 @@
-/*  Не могу решить, надеюсь от усталости, а не от глупости(
-Ввести с консоли n целых чисел. На консоль вывести:
+/* Ввести с консоли n целых чисел. На консоль вывести:
 9.   «Счастливые» числа.*/
 package chapter_1_task.b9;
-import java.util.Arrays;
 import java.util.Scanner;
 public class LuckyNumbers {
     public static void main(String[] args) {
-        System.out.print("Сколько целых чисел вы собираетесь ввести? ");
+        System.out.print("Введите количество целых чисел: ");
         Scanner scanner = new Scanner(System.in);
         int size = scanner.nextInt();
         int[] nums = new int[size];
-        System.out.print("Введите целые числа через пробел " + "и нажмите <Enter>: ");
         for (int i = 0; i < size; i++) {
-            nums[i] = scanner.nextInt();
+            nums[i] = i + 1;
         }
-
-        for (int i = 0; i < size; i++) {
-            int temp;
-                for (int j = 0; j < size - 1; j++) {
-                    if (nums[j] > nums[j + 1]) {
-                        temp = nums[j + 1];
-                        nums[j + 1] = nums[j];
-                        nums[j] = temp;
-                    }
+        for (int j = 2; j < size / 2; j++) {
+            int count = 0;
+            for (int i = 0; i < size; i++) {
+                if (nums[i] != 0) {
+                    count++;
                 }
+                if (count % j == 0) {
+                    nums[i] = 0;
+                }
+            }
         }
-
-        System.out.println(Arrays.toString(nums));
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+                System.out.print(nums[i] + " ");
+            }
+        }
     }
 }
-

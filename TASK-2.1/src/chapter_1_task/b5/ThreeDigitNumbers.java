@@ -14,10 +14,10 @@ public class ThreeDigitNumbers {
         }
         System.out.println("Все  трехзначные  числа,  в  десятичной  записи  которых  нет  одинаковых цифр:");
         for (int num : nums) {
-            String b = String.valueOf(num);
-            int blen = b.length();
-            if (blen == 3) {
-                if (b.charAt(2) != b.charAt(1) && b.charAt(0) != b.charAt(1) && b.charAt(2) != b.charAt(0)) {
+            if (num >= 100 && num <= 999) {
+                String word = String.valueOf(num);
+                char[] chars = word.toCharArray();
+                if (chars[0] != chars[1] && chars[1] != chars[2] && chars[0] != chars[2]) {
                     System.out.println(num);
                 }
             }
