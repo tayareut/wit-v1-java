@@ -1,6 +1,6 @@
 package task_b.serviceClass;
 public class BubbleSorter {
-    public static void sortOfValues(int[] array) {
+    public int[] sortOfValues(int[] array) {
         int temp;
         for (int i = array.length; i > 0; --i) {
             for (int j = 0; j < array.length - 1; j++) {
@@ -11,5 +11,6 @@ public class BubbleSorter {
                 }
             }
         }
+        return array;
     }
 }

@@ -1,13 +1,13 @@
 package task_b.serviceClass;
 import java.util.Scanner;
 public class ScannerOfNumbers {
-    public static int scannerSize() {
+    public int scannerSize() {
         System.out.print("Сколько целых чисел вы собираетесь ввести? ");
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
     }
 
-    public static int[] scannerValuesOfNumbers(int size) {
+    public int[] scannerValuesOfNumbers(int size) {
         System.out.print("Введите целые числа через пробел " + "и нажмите <Enter>: ");
         int[] numbers = new int[size];
         Scanner scanner = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class ScannerOfNumbers {
         return numbers;
     }
 
-    public static int[] scannerValuesOfNumbersToString(int size) {
+    public int[] scannerValuesOfNumbersToString(int size) {
         System.out.print("Введите целые числа через пробел " + "и нажмите <Enter>: ");
         int[] numbers = new int[size];
         Scanner scanner = new Scanner(System.in);
