@@ -22,6 +22,6 @@ public class MaxMinBubbleSort {
             }
         }
         System.out.println(nums[0] + " - минимальное число");
-        System.out.println(nums[nums.length - 1] + " - минимальное число");
+        System.out.println(nums[nums.length - 1] + " - максимальное число");
     }
 }

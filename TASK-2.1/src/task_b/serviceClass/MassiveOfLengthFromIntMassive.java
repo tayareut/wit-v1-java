@@ -1,6 +1,6 @@
 package task_b.serviceClass;
 
-public class MassiveOfCharsFromIntMassive {
+public class MassiveOfLengthFromIntMassive {
     public int[] getMassiveOfChars(int[] array) {
         CountNumberOfCharsInInteger method = new CountNumberOfCharsInInteger();
         int[] numsToChars = new int[array.length];
