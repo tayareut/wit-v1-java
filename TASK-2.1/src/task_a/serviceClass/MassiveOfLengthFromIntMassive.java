@@ -1,4 +1,4 @@
-package task_b.serviceClass;
+package task_a.serviceClass;
 
 public class MassiveOfLengthFromIntMassive {
     public int[] getMassiveOfChars(int[] array) {

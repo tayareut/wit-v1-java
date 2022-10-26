@@ -1,7 +1,7 @@
-package task_b.serviceClass;
+package task_a.serviceClass;
 
-public class IndexOfMinElementInArray {
-    public int findMinElement (int [] array) {
+public class MinIntValueIndex {
+    public int minValueIndex (int [] array) {
         int minValue = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[minValue] > array[i]) {

@@ -1,4 +1,4 @@
-package task_b.serviceClass;
+package task_a.serviceClass;
 // Count the number of characters in Integer
 public class CountNumberOfCharsInInteger {
     public int getCountsNumberOfChar(int number) {

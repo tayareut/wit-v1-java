@@ -1,4 +1,4 @@
-package task_b.serviceClass;
+package task_a.serviceClass;
 import java.util.Scanner;
 public class ScannerOfNumbers {
     public int scannerSize() {

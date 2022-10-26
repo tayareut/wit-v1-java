@@ -1,6 +1,6 @@
-package task_b.serviceClass;
+package task_a.serviceClass;
 
-public class CountUniqueNumbers {
+public class CounterUniqueNumbers {
     public int getCountUniqueDigits(int number) {
         int result = 0;
         int[] count = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
